@@ -1,0 +1,36 @@
+{
+    "audio": "pipewire",
+    "bootloader": "grub-install",
+    "custom-commands": [],
+    "gfx_driver": "VMware / VirtualBox (open-source)",
+    "filesystem": "ext4",
+    "harddrives": [
+        "/dev/sda"
+    ],
+    "hostname": "turbArch**",
+    "kernels": [
+        "linux-zen"
+    ],
+    "keyboard-layout": "us",
+    "mirror-region": "South Korea",
+    "nic": {
+        "NetworkManager": true,
+        "nic": "Use NetworkManager (necessary to configure internet graphically in GNOME and KDE)"
+    },
+    "ntp": true,
+    "packages": [
+        "vim",
+        "git",
+        "zip",
+        "unzip"
+    ],
+    "profile": "i3",
+    "!root-password": "nowhere",
+    "swap": false,
+    "sys-encoding": "utf-8",
+    "sys-language": "en_US",
+    "timezone": "Asia/Seoul",
+    "users": {
+        "hans": {"!password": "nowhere"}
+    }
+}

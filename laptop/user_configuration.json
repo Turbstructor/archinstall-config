@@ -1,0 +1,60 @@
+{
+    "audio": "pipewire",
+    "bootloader": "grub-install",
+    "config_version": "2.5.1",
+    "debug": false,
+    "desktop-environment": "i3",
+    "gfx_driver": "Intel (open-source)",
+    "harddrives": [
+        "/dev/nvme0n1"
+    ],
+    "hostname": "turbArchLaptop",
+    "kernels": [
+        "linux-zen"
+    ],
+    "mirror-region": {
+        "South Korea": {
+            "http://ftp.lanet.kr/pub/archlinux/$repo/os/$arch": true,
+            "http://mirror.anigil.com/archlinux/$repo/os/$arch": true,
+            "http://mirror.funami.tech/arch/$repo/os/$arch": true,
+            "http://mirror.misakamikoto.network/archlinux/$repo/os/$arch": true,
+            "http://mirror.premi.st/archlinux/$repo/os/$arch": true,
+            "https://ftp.lanet.kr/pub/archlinux/$repo/os/$arch": true,
+            "https://mirror.anigil.com/archlinux/$repo/os/$arch": true,
+            "https://mirror.funami.tech/arch/$repo/os/$arch": true,
+            "https://mirror.misakamikoto.network/archlinux/$repo/os/$arch": true,
+            "https://mirror.premi.st/archlinux/$repo/os/$arch": true,
+            "https://seoul.mirror.pkgbuild.com/$repo/os/$arch": true
+        }
+    },
+    "nic": {
+        "dhcp": true,
+        "dns": null,
+        "gateway": null,
+        "iface": null,
+        "ip": null,
+        "type": "nm"
+    },
+    "no_pkg_lookups": false,
+    "offline": false,
+    "packages": [
+        "base-devel", "vim", "git", "zsh", "net-tools",
+        "neofetch", "btop", "tldr", 
+        "udisks2", "ntfs-3g", "e2fsprogs", "dosfstools", "mdadm",
+        "os-prober", "intel-undervolt", 
+        "alacritty",
+        "terminus-font", "ttf-terminus-nerd", "gnu-free-fonts", "noto-fonts-cjk", "noto-fonts-emoji", "ttf-baekmuk", "ttf-proggy-clean",
+        "autorandr", "nvidia-open-dkms",
+        "ibus", "ibus-hangul",
+        "easyeffects", "mpc", "mpd", "ncmpcpp",
+        "polybar"
+    ],
+    "profile": {
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
+    },
+    "script": "guided",
+    "silent": false,
+    "sys-language": "en_US.UTF-8",
+    "timezone": "Asia/Seoul",
+    "version": "2.5.1"
+}

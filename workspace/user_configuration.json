@@ -1,17 +1,20 @@
 {
-    "audio": "pipewire",
+    "HSM": null,
+    "__separator__": null,
+    "additional-repositories": [],
+    "archinstall-language": "English",
+    "audio": "pulseaudio",
     "bootloader": "grub-install",
     "config_version": "2.5.1",
     "debug": false,
-    "desktop-environment": "i3",
-    "gfx_driver": "Intel (open-source)",
     "harddrives": [
-        "/dev/nvme0n1"
+        "/dev/sda"
     ],
-    "hostname": "turbArch-laptop",
+    "hostname": "turbArch-workspace",
     "kernels": [
         "linux-zen"
     ],
+    "keyboard-layout": "us",
     "mirror-region": {
         "South Korea": {
             "http://ftp.lanet.kr/pub/archlinux/$repo/os/$arch": true,
@@ -36,24 +39,23 @@
         "type": "nm"
     },
     "no_pkg_lookups": false,
+    "ntp": true,
     "offline": false,
     "packages": [
-        "base-devel", "vim", "git", "zsh", "net-tools",
-        "neofetch", "btop", "tldr", 
-        "udisks2", "ntfs-3g", "e2fsprogs", "dosfstools", "mdadm",
-        "os-prober", "intel-undervolt", 
-        "alacritty",
-        "terminus-font", "ttf-terminus-nerd", "gnu-free-fonts", "noto-fonts-cjk", "noto-fonts-emoji", "ttf-baekmuk", "ttf-proggy-clean",
-        "autorandr", "nvidia-open-dkms",
-        "ibus", "ibus-hangul",
-        "easyeffects", "mpc", "mpd", "ncmpcpp",
-        "polybar"
+        "base", "base-devel", "man-db",
+        "vim", "git",
+        "python", "python-pip", "python-virtualenv",
+        "ffmpeg"
     ],
+    "parallel downloads": 5,
     "profile": {
-        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/desktop.py"
+        "path": "/usr/lib/python3.10/site-packages/archinstall/profiles/server.py"
     },
+    "save_config": null,
     "script": "guided",
     "silent": false,
+    "swap": true,
+    "sys-encoding": "UTF-8",
     "sys-language": "en_US.UTF-8",
     "timezone": "Asia/Seoul",
     "version": "2.5.1"

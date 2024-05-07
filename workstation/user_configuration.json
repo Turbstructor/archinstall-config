@@ -1,0 +1,158 @@
+{
+    "additional-repositories": [],
+    "archinstall-language": "English",
+    "audio_config": null,
+    "bootloader": "Grub",
+    "config_version": "2.8.0",
+    "debug": false,
+    "disk_config": {
+        "config_type": "default_layout",
+        "device_modifications": [
+            {
+                "device": "/dev/sda",
+                "partitions": [
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [
+                            "Boot",
+                            "ESP"
+                        ],
+                        "fs_type": "fat32",
+                        "mount_options": [],
+                        "mountpoint": "/boot",
+                        "obj_id": "85886d04-53c9-4c72-96df-7b260bf9f31d",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "GiB",
+                            "value": 1
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "MiB",
+                            "value": 1
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    },
+                    {
+                        "btrfs": [],
+                        "dev_path": null,
+                        "flags": [],
+                        "fs_type": "ext4",
+                        "mount_options": [],
+                        "mountpoint": "/",
+                        "obj_id": "0a93e2a6-3a48-4645-9c6e-2e4816c408e6",
+                        "size": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 499032023040
+                        },
+                        "start": {
+                            "sector_size": {
+                                "unit": "B",
+                                "value": 512
+                            },
+                            "unit": "B",
+                            "value": 1074790400
+                        },
+                        "status": "create",
+                        "type": "primary"
+                    }
+                ],
+                "wipe": true
+            }
+        ]
+    },
+    "hostname": "turbWorkstation",
+    "kernels": [
+        "linux-lts"
+    ],
+    "locale_config": {
+        "kb_layout": "us",
+        "sys_enc": "UTF-8",
+        "sys_lang": "en_US"
+    },
+    "mirror_config": {
+        "custom_mirrors": [],
+        "mirror_regions": {
+            "South Korea": [
+                "https://seoul.mirror.pkgbuild.com/$repo/os/$arch",
+                "https://mirror.yuki.net.uk/archlinux/$repo/os/$arch",
+                "https://mirror.siwoo.org/archlinux/$repo/os/$arch",
+                "https://mirror.morgan.kr/archlinux/$repo/os/$arch",
+                "https://mirror.funami.tech/arch/$repo/os/$arch",
+                "https://kr.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "https://ftp.lanet.kr/pub/archlinux/$repo/os/$arch",
+                "http://mirror.yuki.net.uk/archlinux/$repo/os/$arch",
+                "http://mirror.siwoo.org/archlinux/$repo/os/$arch",
+                "http://mirror.morgan.kr/archlinux/$repo/os/$arch",
+                "http://mirror.funami.tech/arch/$repo/os/$arch",
+                "http://kr.mirrors.cicku.me/archlinux/$repo/os/$arch",
+                "http://ftp.lanet.kr/pub/archlinux/$repo/os/$arch",
+                "http://ftp.kaist.ac.kr/ArchLinux/$repo/os/$arch"
+            ]
+        }
+    },
+    "network_config": {
+        "nics": [
+            {
+                "dhcp": true,
+                "dns": [],
+                "gateway": null,
+                "iface": "enp3s0",
+                "ip": null
+            }
+        ],
+        "type": "manual"
+    },
+    "no_pkg_lookups": false,
+    "ntp": true,
+    "offline": false,
+    "packages": [
+        "base-devel",
+        "btop",
+        "fastfetch",
+        "nvidia-lts",
+        "nvidia-utils",
+        "git",
+        "intel-ucode",
+        "jdk17-openjdk",
+        "python",
+        "python-pip",
+        "python-virtualenv"
+    ],
+    "parallel downloads": 5,
+    "profile_config": {
+        "gfx_driver": null,
+        "greeter": null,
+        "profile": {
+            "custom_settings": {
+                "Docker": {},
+                "sshd": {}
+            },
+            "details": [
+                "Docker",
+                "sshd"
+            ],
+            "main": "Server"
+        }
+    },
+    "script": "guided",
+    "silent": false,
+    "skip_ntp": false,
+    "skip_version_check": false,
+    "swap": true,
+    "timezone": "Asia/Seoul",
+    "uki": false,
+    "version": "2.8.0"
+}

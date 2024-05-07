@@ -1,14 +1,33 @@
-# NOTE: This repository is NOT OFFICIAL and I'm NOT AFFILIATED with the official `archinstall` repository.
+# NOTE: This repository is NEITHER OFFICIAL NOR AFFILIATED with the official `archinstall` repository.
 
 # `archinstall-config`
 
-Personal `archinstall` configuration for installing archlinux in multiple environments: 'laptop' and 'workspace' at the time I wrote this `README.md` file.
+Personal `archinstall` configuration for installing archlinux in multiple environments: 'laptop' and 'workstation' at the time I wrote this `README.md` file.
 
-Used with `archinstall`'s *guided* installation script. See [Guided Installation#`--config`](https://archinstall.archlinux.page/installing/guided.html#config) for detailed explanation of how to use customized configuration files.
+Used with `archinstall`'s *guided* installation script. See [Guided Installation](https://archinstall.archlinux.page/installing/guided.html#guided-installation) for detailed explanation of how to make and use configuration files.
+
+## How to make configuration files
+
+1. In Archlinux, install the `archinstall` package:
+    ```bash
+    sudo pacman -S archinstall
+    ```
+2. Run `archinstall` *with root privileges* and *with `--dry-run` option*(in safe mode).
+    ```bash
+    sudo archinstall --dry-run
+    ```
+3. Set installation options to your preferences.
+4. `Save configuration` to your location.
 
 ## Usage
 
 1. Boot with Archlinux ISO
-2. Download `*.json` files from this repository using `curl` (if you want to pass the file link(like `https://github.com/Turbstructor/archinstall-config/blob/main/turbArch.json`) you can skip this step)
-3. Run `archinstall` with flags `--config`, `--creds`, and `--disk_layouts`.
-4. Confirm loaded configurations and proceed to installation.
+2. Run `archinstall` with `--config` and `--creds` options (with each configiration file as argument. ex) `user_configuration.json` and `user_credentials.json`).
+    ```bash
+    archinstall --config user_configuration.json --creds user_credentials.json
+    ```
+    Or if you want to get the files from remote locations(like me here):
+    ```bash
+    archinstall --config <your_link_to_configuration_file> --creds <your_link_to_credentials_file>
+    ```
+3. Confirm loaded configurations and proceed to installation.
